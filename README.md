@@ -38,12 +38,7 @@ dependencies {
 4. Create a class named Constants.java to keep few global variables like activity frequency interval and confidence threshold.
 
 Constants.java
-package info.androidhive.activityrecognition;
- 
-/**
- * Created by ravi on 17/12/17.
- */
- 
+package info.androidhive.activityrecognition; 
 public class Constants {
  
     public static final String BROADCAST_DETECTED_ACTIVITY = "activity_intent";
@@ -56,12 +51,6 @@ public class Constants {
 
 DetectedActivitiesIntentService.java
 package info.androidhive.activityrecognition;
- 
- 
-/**
- * Created by ravi on 16/12/17.
- */
- 
 import android.app.IntentService;
 import android.content.Intent;
 import android.support.v4.content.LocalBroadcastManager;
@@ -224,8 +213,6 @@ public class BackgroundDetectedActivitiesService extends Service {
     }
 }
 7. Open AndroidManifest.xml and add ACTIVITY_RECOGNITION permission. Also add DetectedActivitiesIntentService and BackgroundDetectedActivitiesService services.
-
-
  
 AndroidManifest.xml
 <?xml version="1.0" encoding="utf-8"?>
